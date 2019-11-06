@@ -1,18 +1,52 @@
-import {Entity, PrimaryGeneratedColumn, Column} from "typeorm";
+import { Entity, PrimaryGeneratedColumn, Column, BaseEntity } from "typeorm";
+import { ObjectType, Field, Int } from "type-graphql";
 
-@Entity()
-export class User {
+@ObjectType()
+@Entity("Acount.users")
+export class User extends BaseEntity {
+  @Field(() => Int)
+  @PrimaryGeneratedColumn()
+  id: number;
 
-    @PrimaryGeneratedColumn()
-    id: number;
+  @Field()
+  @Column("text", { default: "" })
+  fiscalId: string;
 
-    @Column()
-    firstName: string;
+  @Field()
+  @Column("text", { default: "" })
+  firstName: string;
 
-    @Column()
-    lastName: string;
+  @Field()
+  @Column("text", { default: "" })
+  lastName: string;
 
-    @Column()
-    age: number;
+  @Field()
+  @Column()
+  email: string;
 
+  @Column()
+  password: string;
+
+  @Field()
+  @Column("text", { default: "" })
+  city: string;
+
+  @Field()
+  @Column("text", { default: "" })
+  state: string;
+
+  @Field()
+  @Column("text", { default: "" })
+  address: string;
+
+  @Field()
+  @Column("text", { default: "" })
+  zip: string;
+
+  @Field()
+  @Column("text", { default: "" })
+  country: string;
+
+  @Column("int", { default: 0 })
+  tokenVersion: number;
 }

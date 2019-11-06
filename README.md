@@ -12,12 +12,12 @@
 
 ## BackEnd.
 
-    1 - [] Setup GraphQL Server using TypeGraphQL and TypeORM.
-    2 - [] Register a user.
-    3 - [] Login an create access and refresh tokens.
-    4 - [] Authenticated mutations/queries.
-    5 - [] Refrehs the token.
-    6 - [] Revoke tokens for a user.
+    1 - [x] Setup GraphQL Server using TypeGraphQL and TypeORM.
+    2 - [x] Register a user.
+    3 - [x] Login an create access and refresh tokens.
+    4 - [x] Authenticated mutations/queries.
+    5 - [x] Refrehs the token.
+    6 - [x] Revoke tokens for a user.
 
 ## FrontEnd.
 
