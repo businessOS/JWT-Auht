@@ -21,9 +21,10 @@
 
 ## FrontEnd.
 
-    1 - [] Setup Apollo and GraphQL Code Generator.
-    2 - [] React Router.
-    3 - [] Register/Login.
-    4 - [] Persisting session on refresh.
-    5 - [] Handling expired tokens.
-    6 - [] Fetching current user in header.
+    1 - [x] Setup Apollo and GraphQL Code Generator.
+    2 - [x] React Router.
+    3 - [x] Register/Login.
+    4 - [x] Persisting session on refresh.
+    5 - [x] Handling expired tokens.
+    6 - [x] Fetching current user in header.
+    7 - [x] Logout.

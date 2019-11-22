@@ -23,3 +23,17 @@
 9. Install package to handle cookies.
    -> yarn add cookie-parser
    -> yarn add -D @types/cookie-parser
+
+
+# FrontEnd
+
+1. Install nedded packages.
+    -> yarn add apollo-boost graphql
+    -> yarn add @apollo/react-hooks
+2. Install codegen for GraphQL
+    -> yarn add -D @graphql-codegen/clli
+3. Setup codegen
+    -> npx graphql-codegen init
+4. Install router to develop register and login pages.
+    -> yarn add react-router-dom
+    -> yarn add -D @types/react-router-dom

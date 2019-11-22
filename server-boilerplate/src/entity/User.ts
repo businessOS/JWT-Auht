@@ -2,7 +2,7 @@ import { Entity, PrimaryGeneratedColumn, Column, BaseEntity } from "typeorm";
 import { ObjectType, Field, Int } from "type-graphql";
 
 @ObjectType()
-@Entity("Acount.users")
+@Entity("account.users")
 export class User extends BaseEntity {
   @Field(() => Int)
   @PrimaryGeneratedColumn()

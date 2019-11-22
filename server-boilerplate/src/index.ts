@@ -8,11 +8,19 @@ import { createConnection } from "typeorm";
 import cookieParser from "cookie-parser";
 import { createAccessToken, createRefreshToken } from "./auth";
 import { verify } from "jsonwebtoken";
+import cors from 'cors';
+
 import { User } from "./entity/User";
 import { sendRefreshToken } from "./sendRefreshToken";
 
 (async () => {
   const app = express();
+  app.use(
+    cors({
+      origin: "http://localhost:3000",
+      credentials: true
+    })
+  );
 
   app.use(cookieParser());
 
@@ -59,7 +67,7 @@ import { sendRefreshToken } from "./sendRefreshToken";
     context: ({ req, res }) => ({ req, res })
   });
 
-  apolloServer.applyMiddleware({ app });
+  apolloServer.applyMiddleware({ app, cors:false });
 
   app.listen(4000, () => {
     console.log("Expreess server started");
